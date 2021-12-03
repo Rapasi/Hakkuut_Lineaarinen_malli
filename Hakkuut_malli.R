@@ -32,6 +32,10 @@ px_data_hinta <-
 hakkuut_taulukko <- as.data.frame(px_data_hakkuut, column.name.type = "text", variable.value.type = "text")
 hinta_taulukko <- as.data.frame(px_data_hinta, column.name.type = "text", variable.value.type = "text")
 
+#Tallennetaan taulukot csv-tiedostoiksi Pythonia varten. 
+
+write.csv(px_data_hakkuut,"C:\Users\ramie\Python_projects\Math\\Hakkuut.csv", row.names = FALSE)
+
 # Valitaan ensin hakkuutaulukoista muuttujien yhteenlasketut arvot. Olisin tietenkin voinut laskea summan myös itse manuaalisesti, mutta jätetään se seuraavin harjoitteluihin. 
 #Lisäksi valitaan vain tiedot vain vuodesta 1995 eteenpäin, kohta selviää miksi. 
 
